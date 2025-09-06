@@ -1,1 +1,26 @@
-[{"ID": "PRODID9741", "user_id": "ID9231", "name": "Garri", "quantity": "20 bags", "desciption": null, "category_id": "C001"}, {"ID": "PRODID6895", "user_id": "ID1518", "name": "Goat", "quantity": "5 ", "desciption": null, "category_id": "A001"}]
+[
+  {
+    "ID": "PRODID9935",
+    "user_id": "ID5777",
+    "name": "Legumes",
+    "quantity": "30 bags",
+    "desciption": null,
+    "category": "crops"
+  },
+  {
+    "ID": "PRODID3544",
+    "user_id": "ID9599",
+    "name": "Wheat",
+    "quantity": "50 bags",
+    "desciption": "",
+    "category": "crops"
+  },
+  {
+    "ID": "PRODID3502",
+    "user_id": "ID9599",
+    "name": "Grains",
+    "quantity": "20 bags",
+    "desciption": "Whole grains for everyone",
+    "category": "crops"
+  }
+]
