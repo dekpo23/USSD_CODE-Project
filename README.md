@@ -1,5 +1,7 @@
 # AgroUSSD – Agricultural Marketplace via USSD
+## Overview
 AgroUSSD is a console-based simulation of a USSD platform that directly connects Nigerian farmers and buyers. It provides real-time market price information, reduces dependence on middlemen, and empowers farmers with fair pricing opportunities using only basic mobile technology. This project presents the development of AgroUSSD, a simple agricultural information and trading system that leverages USSD technology to address market inefficiencies in Nigerian agriculture.
+
 
 ## 🚀 Features
 -Farmer Registration & Profiles → Farmers can sign up, store personal details, and showcase available crops.
@@ -27,14 +29,29 @@ USSD_CODE-Project-main/
 │── traders.json             # Sample trader data
 │── products.json            # Sample product data
 
-#####📱 Example Usage
+##### 📱 Example Usage
 
 Welcome to AgroUSSD Platform
 1. Register as Farmer
 2. Register as Buyer
 3. View Products
-4. Exit
+4. Update user profile
+5. Order products
+6. Exit
 
 ⚠️ Disclaimer: This project is still under active development. Certain features are incomplete and will be expanded or refined over time.
+
+## Future Improvements
+* **Smart Inventory Management** → Implement product stock tracking with low-stock alerts for farmers.  
+* **Buyer Spending & Analytics** → Track buyer transactions, spending history, and provide insights into purchasing trends.  
+* **Secure Authentication System** → Add password protection with role-based access (farmer, buyer, admin) to ensure secure platform use.  
+* **AI-Powered Insights** → Integrate machine learning models for price prediction, demand forecasting, and personalized recommendations for users.  
+* **Database Integration** → Migrate from JSON files to a robust database system (e.g., PostgreSQL, MySQL, or MongoDB) for scalability and performance.  
+* **Mobile & Web Application** → Develop a mobile app (Android/iOS) and/or progressive web app (PWA) to make the platform more accessible.  
+* **Offline-first USSD Gateway** → Connect with telecom USSD APIs to enable real-world usage without internet access.  
+* **Payment Integration** → Support secure digital payments (e.g., mobile money, bank transfers) directly within the platform.  
+* **Multi-language Support** → Provide local language options (e.g., Yoruba, Hausa, Igbo) for inclusivity.  
+* **Admin Dashboard** → Build an admin interface for monitoring activity, resolving disputes, and managing users/products.  
+
 
    
