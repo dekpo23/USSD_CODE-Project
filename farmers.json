@@ -1,1 +1,22 @@
-[]
+[
+    {
+        "ID": "ID8359",
+        "name": "David Ekpo",
+        "age": 27,
+        "gender": "Male",
+        "location": "225 katakata strt, Ogidan, Ogun state",
+        "phone number": "09147668324",
+        "product category": "crops",
+        "total_stock": 0
+    },
+    {
+        "ID": "ID4667",
+        "name": "Habeeb",
+        "age": 35,
+        "gender": "Male",
+        "location": "Sonariwo, Yusuf road, Kano ",
+        "phone number": "08179135035",
+        "product category": "livestock",
+        "total_stock": 0
+    }
+]
