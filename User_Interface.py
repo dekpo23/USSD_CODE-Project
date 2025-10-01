@@ -144,6 +144,7 @@ def user_product():
                         buyer_details = buyer(user_detail.user_id, user_detail.name, user_detail.age, user_detail.gender, user_detail.location, user_detail.phone_number)
                         buyer_details.save_info()
                         print("Registration successful!!")
+                        print(f'You have created an account with AGROUSSD successfully!...\nYour User ID is \'{user_detail.user_id}\'. Please save this as you would need it to log into your account.\nTaking you to previous menu now...')
                     else:
                         print("Error completing registration.. 🤔")
                 else:

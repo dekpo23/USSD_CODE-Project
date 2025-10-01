@@ -1,11 +1,65 @@
 [
-  {
-    "ID": "ID4771",
-    "name": "Ken",
-    "age": 24,
-    "gender": "Male",
-    "location": "Ikeja, Lagos",
-    "phone number": "07068597686",
-    "Amount_sold": 0
-  }
+    {
+        "ID": "ID4771",
+        "name": "Ken",
+        "age": 24,
+        "gender": "Male",
+        "location": "Ikeja, Lagos",
+        "phone number": "07068597686",
+        "Amount_sold": 0
+    },
+    {
+        "ID": "ID9610",
+        "name": "Nike",
+        "age": 95,
+        "gender": "Female",
+        "location": "Lagos",
+        "phone number": "08001205765",
+        "Amount_sold": 0
+    },
+    {
+        "ID": "ID8989",
+        "name": "Nike",
+        "age": 45,
+        "gender": "Female",
+        "location": "Port Harcourt",
+        "phone number": "08101205765",
+        "Amount_sold": 0
+    },
+    {
+        "ID": "ID7258",
+        "name": "Nike",
+        "age": 45,
+        "gender": "Female",
+        "location": "Location",
+        "phone number": "08101205765",
+        "Amount_sold": 0
+    },
+    {
+        "ID": "ID9047",
+        "name": "Ade",
+        "age": 20,
+        "gender": "Female",
+        "location": "Abeokuta",
+        "phone number": "08101205765",
+        "Amount_sold": 0
+    },
+    {
+        "ID": "ID6731",
+        "name": "Ade",
+        "age": 20,
+        "gender": "Female",
+        "location": "Kobape",
+        "phone number": "08076907898",
+        "Amount_sold": 0
+    },
+    {
+        "ID": "ID6243",
+        "name": "Ade",
+        "age": 32,
+        "gender": "Female",
+        "location": "Kobape",
+        "phone number": "08079089087",
+        "Amount_sold": 0
+    }
 ]

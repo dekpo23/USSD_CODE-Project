@@ -1,4 +1,5 @@
 from User_Product_Data import Users, farmer, Product
+import json
 
 def option_selection():
   return '1. Existing User \n2. New user'
@@ -30,7 +31,7 @@ def farmer_selection(user_detail, cat_sel):
           print('Your Products have been saved')
       elif choice_add == 2:
           data = farmer.load_info()
-          print(f'You have created an account with AGROUSSD successfully!...\nYour User ID is \'{data[-1]['ID']}\'. Please save this as you would need it to log into your account.\nTaking you to previous menu now...')
+          print(f"You have created an account with AGROUSSD successfully!...\nYour User ID is '{data[-1]['ID']}'. Please save this as you would need it to log into your account.\nTaking you to previous menu now...")
           break
       else:
           pass
@@ -78,4 +79,63 @@ def user_form():
           return user_detail
   except ValueError as e:
       print("Error: ", e)
+
+def view_profile(file_path, id):
+    with open(file_path, 'r', encoding = 'utf-8') as f:
+        user_details = json.load(f)
+    particular_user = list(filter(lambda x: x['ID'] == id, user_details))
+    particular_user_list = [f'{i}: {j}' for i, j in particular_user[0].items()]
+    return '\n'.join(particular_user_list)
+
+def update_profile(file_path, id):
+    with open(file_path, 'r', encoding = 'utf-8') as f:
+        user_details = json.load(f)
+    particular_user = list(filter(lambda x: x['ID'] == id, user_details))
+    new_particular_user = {i: input(f'Enter {i} here: ') for i in particular_user[0].keys() if i != 'Amount_sold'}
+    new_particular_user['Amount_sold'] = particular_user[0]['Amount_sold']
+    user_details.remove(particular_user[0])
+    user_details.append(new_particular_user)
+    with open(file_path, 'w', encoding = 'utf-8') as f:
+        json.dump(user_details, f, indent = 4)
+
+import json
+
+def order_products(file_path, name):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        product_details = json.load(f)
+
+    # Filter products by name
+    target_products = [p for p in product_details if p['name'] == name]
+
+    if not target_products:
+        print(f"No products found with name: {name}")
+        return None
+
+    print("Choose preferred product from list below:\n")
+    for idx, product in enumerate(target_products, start=1):
+        details = ", ".join([f"{k}: {v}" for k, v in product.items()])
+        print(f"{idx}. {details}")
+
+    choice = int(input("\nEnter the number of the product you want to buy: "))
+
+    if 1 <= choice <= len(target_products):
+        preferred_product = target_products[choice - 1]
+        print("You selected:", preferred_product)
+        return preferred_product
+    else:
+        print("Invalid choice.")
+        return None
+    
+
+
+
+
+        
+
+
+    
+
+
+
+
 

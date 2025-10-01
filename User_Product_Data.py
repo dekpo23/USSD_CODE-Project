@@ -15,8 +15,6 @@ class farmer(Users):
         self.user_id = user_id
         self.product_category = product_category
         self.stock = 0
-    def track_stock(self):
-        pass
     def save_info(self):
         from pathlib import Path
         import json
@@ -31,7 +29,7 @@ class farmer(Users):
         data.append(farmer)
         
         with open(farmer_json, 'w', encoding='utf-8') as f:
-            json.dump(data, f)
+            json.dump(data, f, indent = 4)
 
 
     def load_info():
@@ -70,7 +68,7 @@ class buyer(Users):
         data.append(trader)
         
         with open(trader_json, 'w', encoding='utf-8') as f:
-            json.dump(data, f)
+            json.dump(data, f, indent = 4)
         
 class ProductCategory:
     def __init__(self, category_id, name, description=None, is_active=True):
@@ -112,11 +110,14 @@ class Product:
         data.append(product)
         
         with open(product_json, 'w', encoding='utf-8') as f:
-                json.dump(data, f)
+                json.dump(data, f, indent = 4)
         
     def generate_id(self):
         import random
         return 'PRODID' + str(random.randint(1000, 9999))
+    
+    def track_stock(self):
+        pass
 
     def _str_(self):
         return f"{self.name} - {self.price} NGN ({self.quantity} units)"

@@ -1,1 +1,42 @@
-[]
+[
+    {
+        "ID": "ID9417",
+        "name": "Ade",
+        "age": 22,
+        "gender": "Female",
+        "location": "Ogun",
+        "phone number": "08101205765",
+        "product category": "crops",
+        "total_stock": 0
+    },
+    {
+        "ID": "ID7063",
+        "name": "Kenny",
+        "age": 28,
+        "gender": "Male",
+        "location": "Abeokuta",
+        "phone number": "08069683219",
+        "product category": "crops",
+        "total_stock": 0
+    },
+    {
+        "ID": "ID9567",
+        "name": "Ade",
+        "age": 20,
+        "gender": "Male",
+        "location": "Abeokuta",
+        "phone number": "08101205765",
+        "product category": "crops",
+        "total_stock": 0
+    },
+    {
+        "ID": "ID3675",
+        "name": "Ade",
+        "age": 22,
+        "gender": "Female",
+        "location": "Abeokuta",
+        "phone number": "08101205765",
+        "product category": "crops",
+        "total_stock": 0
+    }
+]
