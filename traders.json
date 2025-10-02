@@ -1,11 +1,20 @@
 [
-  {
-    "ID": "ID4771",
-    "name": "Ken",
-    "age": 24,
-    "gender": "Male",
-    "location": "Ikeja, Lagos",
-    "phone number": "07068597686",
-    "Amount_sold": 0
-  }
+    {
+        "ID": "ID4771",
+        "name": "Perpetual",
+        "age": 25,
+        "gender": "Female",
+        "location": "Konichiwa strt, Oshogbo, Osun",
+        "phone number": "07068597686",
+        "Amount_sold": 0
+    },
+    {
+        "ID": "ID8454",
+        "name": "Adenike Adebiyi",
+        "age": 31,
+        "gender": "Female",
+        "location": "Kobape Rd., Abeokuta, Ogun state",
+        "phone number": "08176243232",
+        "Amount_sold": 0
+    }
 ]
